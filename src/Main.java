@@ -21,6 +21,7 @@ public class Main {
                     4 - Sacar
                     5 - Transferir
                     6 - Ver extrato
+                    7 - Aplicar rendimento(válido para contas poupança)
                     0 - Sair
                     """);
             System.out.println("Escolha uma opção!");
@@ -84,6 +85,15 @@ public class Main {
                         conta.imprimirExtrato();
                     }
                 }
+                case 7 -> {
+                    Conta conta = buscarConta(contas, sc);
+                    if(conta instanceof ContaPoupanca poupanca){
+                        poupanca.obterRendimentos();
+                    }else{
+                        System.out.println("A conta declarada não é uma conta poupança");
+                    }
+                }
+
                 case 0 -> System.out.println("Encerrando programa");
 
             }
