@@ -1,4 +1,6 @@
-package Entities;
+package model;
+
+import service.IConta;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

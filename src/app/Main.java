@@ -1,7 +1,9 @@
-import Entities.Cliente;
-import Entities.Conta;
-import Entities.ContaCorrente;
-import Entities.ContaPoupanca;
+package app;
+
+import model.Cliente;
+import model.Conta;
+import model.ContaCorrente;
+import model.ContaPoupanca;
 
 import java.util.ArrayList;
 import java.util.List;

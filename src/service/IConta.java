@@ -1,4 +1,6 @@
-package Entities;
+package service;
+
+import model.Conta;
 
 public interface IConta {
 
